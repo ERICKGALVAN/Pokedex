@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="contenedor">
+      <section class="izquierda">
+        <div class="arriba-izq">
+          <div class="bola-azul bola-azul-noise"></div>
+          <div class="bola-roja"></div>
+          <div class="bola-amarilla"></div>
+          <div class="bola-amarilla"></div>
+        </div>
+
+        <div class="centro-izq">
+          <img id="imagen" class="imagen" src="pokeball.jpg" alt="Pokemon" />
+          <h1 id="label_nombre">Pokemon</h1>
+        </div>
+
+        <div class="abajo-izq">
+          <input id="input" class="entrada" type="text" placeholder="Pokémon" />
+          <input type="button" class="boton" onclick="boton()" />
+        </div>
+      </section>
+      <!--Fin izquierda-->
+
+      <div class="medio"></div>
+      <!--fin medio-->
+
+      <div class="derecha">
+        <div class="arriba-der">
+          <div class="info">
+            <p>Type:</p>
+            <p id="tipo"></p>
+            <div class="habilidades">
+              <div class="hp">
+                <h1>hp</h1>
+                <br />
+                <p id="ha1"></p>
+              </div>
+
+              <div class="hp">
+                <h1>attk</h1>
+                <br />
+                <p id="ha2"></p>
+              </div>
+
+              <div class="hp">
+                <h1>deff</h1>
+                <br />
+                <p id="ha3"></p>
+              </div>
+
+              <div class="hp">
+                <h1>sp.attk</h1>
+                <br />
+                <p id="ha4"></p>
+              </div>
+
+              <div class="hp">
+                <h1>sp.def</h1>
+                <br />
+                <p id="ha5"></p>
+              </div>
+
+              <div class="hp">
+                <h1>speed</h1>
+                <br />
+                <p id="ha6"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="centro-der">
+          <div class="info">
+            <h1>Weight:</h1>
+            <p id="weight"></p>
+            <br />
+            <h1>Height:</h1>
+            <p id="height"></p>
+          </div>
+        </div>
+
+        <div class="abajo-der"></div>
+      </div>
+    </main>
+
+    <footer>
+      <script src="pokedex.js"></script>
+    </footer>
+  </body>
+</html>
